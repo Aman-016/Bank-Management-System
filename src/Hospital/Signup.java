@@ -232,7 +232,7 @@ public class Signup extends JFrame implements ActionListener {
                 Con c = new Con();
                 String q = "insert into signup values('"+formno+"', '"+name+"','"+fname+"','"+dob+"','"+gender+"','"+email+"','"+marital+"', '"+address+"', '"+city+"','"+pincode+"','"+state+"' )";
                 c.statement.executeUpdate(q);
-                new Signup2();
+                new Signup2(formno);
                 setVisible(false);
             }
 
